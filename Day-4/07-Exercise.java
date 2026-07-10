@@ -17,6 +17,7 @@ Provide appropriate constructor to initialize Emp object. Then create a driver c
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 class Emp {
     int age;
@@ -32,10 +33,19 @@ class Emp {
     public String toString() {
         return "age : " + this.age + " ,name : " + this.name + " ,sal : " + this.sal + " ; ";
     }
+
+    public boolean equals(Object o) {
+        Emp p = (Emp) o;
+        if (this.age == p.age && this.name.equals(p.name) && this.sal == p.sal) {
+            return true;
+        }
+        return false;
+    }
 }
 
 class UseEmp {
     public static void main(String[] args) {
+        Scanner kb = new Scanner(System.in);
        
         Emp emp1 = new Emp(30, "Chetan", 24000);
         Emp emp2 = new Emp(21, "Deepak", 20000);
@@ -46,7 +56,19 @@ class UseEmp {
         emp.add(emp2);
         emp.add(emp3);
         emp.add(emp4);
-         System.out.println(emp);
+        System.out.println(emp);
+         
+        System.out.println("Enter age of emp to be deleted ");
+        int age = kb.nextInt();
+        System.out.println("Enter name of emp to be deleted ");
+        String name = kb.next();
+        System.out.println("Enter salary of emp to be deleted ");
+        double sal = kb.nextDouble();
+
+        Emp emp5 = new Emp(age, name, sal);
+        System.out.println(emp.remove(emp5));
+        System.out.println("After deleting emp");
+        System.out.println(emp);
         
     }
 }
