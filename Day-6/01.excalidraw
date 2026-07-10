@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "tp3BpqwmjLCyWq018ryIv",
+      "type": "text",
+      "x": 314,
+      "y": 108,
+      "width": 723,
+      "height": 375,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": null,
+      "seed": 2064588477,
+      "version": 692,
+      "versionNonce": 379332659,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1783662465661,
+      "link": null,
+      "locked": false,
+      "text": "Sorting the Collection\n=====================\n\n1. To sort the collection we call a method called sort() .\n\n2.This method accepts collection as argument and sort its \nobject in natural order.\n\n3. To use this method the object stored in collection must\nimplement the Comparable interface and override the \ncompareTo() method .\n\n4. Thus if we are sorting the custom Collection then the object we are \nstoring in collection must implement the Comparable interface and override\ncompareTo() method.",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Sorting the Collection\n=====================\n\n1. To sort the collection we call a method called sort() .\n\n2.This method accepts collection as argument and sort its \nobject in natural order.\n\n3. To use this method the object stored in collection must\nimplement the Comparable interface and override the \ncompareTo() method .\n\n4. Thus if we are sorting the custom Collection then the object we are \nstoring in collection must implement the Comparable interface and override\ncompareTo() method.",
+      "autoResize": true,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
