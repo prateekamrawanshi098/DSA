@@ -1,0 +1,16 @@
+package _02_Treemap;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class Example01 {
+    public static void main(String[] args) {
+        Map<String,Integer> cart = new TreeMap<>();
+        System.out.println(cart.put("Dell",100000));
+        System.out.println(cart.put("Mac",130000));
+        System.out.println( cart.put("Lenovo",120000));
+        System.out.println(cart.put("Dell",200000));
+
+        System.out.println(cart);
+    }
+}
