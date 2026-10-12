@@ -1,4 +1,4 @@
-package _02_collectionminiproject;
+package _01_collectionminiproject;
 
 
 import java.util.Set;
@@ -40,4 +40,10 @@ public class Student {
     public String getName() {
         return name;
     }
+
+    public Set<String > getCourses(){
+        return courses;
+    }
+
+
 }
