@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "EzLbe-U0XKugKtEGvrQAF",
+      "type": "text",
+      "x": 342,
+      "y": 127,
+      "width": 1212,
+      "height": 1425,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": null,
+      "seed": 2021041824,
+      "version": 5,
+      "versionNonce": 1871700832,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1791788779409,
+      "link": null,
+      "locked": false,
+      "text": "# Data Structure and Algorithm – Short Notes\n\n## 1. Data Structure\n\nA **Data Structure** is a way of **organizing and storing data** so that it can be accessed and modified efficiently.\n\n**Examples:**\n\n* Array\n* Linked List\n* Stack\n* Queue\n* Tree\n* Graph\n* Hash Table\n\n**Example:** A Queue stores elements using **FIFO (First In, First Out)**.\n\n---\n\n## 2. Algorithm\n\nAn **Algorithm** is a **step-by-step procedure or set of instructions** used to solve a problem or perform a specific task.\n\n**Examples:**\n\n* Linear Search\n* Binary Search\n* Bubble Sort\n* Merge Sort\n* Quick Sort\n* BFS\n* DFS\n\n**Example:** Binary Search is an algorithm used to find an element efficiently in a sorted array.\n\n---\n\n## 3. Difference Between Data Structure and Algorithm\n\n| Data Structure                           | Algorithm                                  |\n| ---------------------------------------- | ------------------------------------------ |\n| Organizes and stores data                | Solves a problem using a sequence of steps |\n| Focuses on how data is stored            | Focuses on how data is processed           |\n| Examples: Array, Stack, Tree             | Examples: Binary Search, Quick Sort        |\n| Helps manage and access data efficiently | Helps solve problems efficiently           |\n\n### Easy Way to Remember\n\n**Data Structure = How/Where data is stored**\n\n**Algorithm = Steps used to solve a problem**\n\n**Example:**\n**Bookshelf → Data Structure**\n**Steps to find a particular book → Algorithm**\n",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "# Data Structure and Algorithm – Short Notes\n\n## 1. Data Structure\n\nA **Data Structure** is a way of **organizing and storing data** so that it can be accessed and modified efficiently.\n\n**Examples:**\n\n* Array\n* Linked List\n* Stack\n* Queue\n* Tree\n* Graph\n* Hash Table\n\n**Example:** A Queue stores elements using **FIFO (First In, First Out)**.\n\n---\n\n## 2. Algorithm\n\nAn **Algorithm** is a **step-by-step procedure or set of instructions** used to solve a problem or perform a specific task.\n\n**Examples:**\n\n* Linear Search\n* Binary Search\n* Bubble Sort\n* Merge Sort\n* Quick Sort\n* BFS\n* DFS\n\n**Example:** Binary Search is an algorithm used to find an element efficiently in a sorted array.\n\n---\n\n## 3. Difference Between Data Structure and Algorithm\n\n| Data Structure                           | Algorithm                                  |\n| ---------------------------------------- | ------------------------------------------ |\n| Organizes and stores data                | Solves a problem using a sequence of steps |\n| Focuses on how data is stored            | Focuses on how data is processed           |\n| Examples: Array, Stack, Tree             | Examples: Binary Search, Quick Sort        |\n| Helps manage and access data efficiently | Helps solve problems efficiently           |\n\n### Easy Way to Remember\n\n**Data Structure = How/Where data is stored**\n\n**Algorithm = Steps used to solve a problem**\n\n**Example:**\n**Bookshelf → Data Structure**\n**Steps to find a particular book → Algorithm**\n",
+      "autoResize": true,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
