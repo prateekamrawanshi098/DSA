@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "4eTCDXTyJwfytdzcMkjGb",
+      "type": "text",
+      "x": 314,
+      "y": 143,
+      "width": 670.5252270522606,
+      "height": 2525,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": null,
+      "seed": 294800611,
+      "version": 57,
+      "versionNonce": 1180978509,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1792146094592,
+      "link": null,
+      "locked": false,
+      "text": "# Why extend RuntimeException instead of Exception in Java?\n\nJava provides two types of exceptions: **Checked Exceptions**\nand **Unchecked Exceptions**.\n\n## 1. RuntimeException\n- `RuntimeException` is an unchecked exception.\n- The compiler does not force us to handle it using `try-catch` or\ndeclare it using `throws`.\n- It is commonly used for programming errors and invalid operations.\n- Examples: `NullPointerException`, `ArithmeticException`,\n`IllegalArgumentException`.\n\n## 2. Exception\n- A custom class extending `Exception` directly creates a checked\nexception.\n- The compiler forces us to handle it using `try-catch` or declare it\nusing `throws`.\n- It is commonly used for recoverable situations that the caller is\nexpected to handle.\n- Example: `IOException`.\n\n## 3. Why extend RuntimeException in StackException?\n\nIn an array-based stack, two exceptional conditions can occur:\n\n- **Stack Overflow:** Trying to push an element when the stack is\nfull.\n- **Stack Underflow:** Trying to pop or peek when the stack is\nempty.\n\nThese conditions represent invalid stack operations. Therefore,\nextending `RuntimeException` is a reasonable design choice.\n\nExample:\n\n```java\npublic class StackException extends RuntimeException {\n    public StackException(String message) {\n        super(message);\n    }\n}\n```\n\nWe can throw this exception without declaring it using `throws`:\n\n```java\npublic void push(int e) {\n    if (TOS == size - 1) {\n        throw new StackException(\"Stack Overflow\");\n    }\n    arr[++TOS] = e;\n}\n```\n\n## 4. What if we extend Exception instead?\n\n```java\npublic class StackException extends Exception {\n    public StackException(String message) {\n        super(message);\n    }\n}\n```\n\nNow `StackException` becomes a checked exception. The `push()`\nmethod must declare it:\n\n```java\npublic void push(int e) throws StackException {\n    if (TOS == size - 1) {\n        throw new StackException(\"Stack Overflow\");\n    }\n    arr[++TOS] = e;\n}\n```\n\nThe calling method must handle it using `try-catch` or declare it\nusing `throws`.\n\n## 5. Difference between Exception and RuntimeException\n\n| Feature | Exception (direct subclass) | RuntimeException\n(subclass) |\n|---|---|---|\n| Type | Checked | Unchecked |\n| Handling required by compiler | Yes | No |\n| `try-catch` or `throws` required | Yes | No |\n| Typical use | Recoverable failures | Invalid operations or\nprogramming errors |\n\n**Important:** `RuntimeException` itself extends `Exception`,\nbut Java treats its subclasses as unchecked exceptions.\n\n### Conclusion\nWe extend `RuntimeException` in `StackException` because stack\noverflow and underflow can be treated as invalid operations, and\nthe compiler does not need to force every caller to handle them.\nHowever, extending `Exception` is also possible if we want to\nenforce explicit handling.\n",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "# Why extend RuntimeException instead of Exception in Java?\n\nJava provides two types of exceptions: **Checked Exceptions** and **Unchecked Exceptions**.\n\n## 1. RuntimeException\n- `RuntimeException` is an unchecked exception.\n- The compiler does not force us to handle it using `try-catch` or declare it using `throws`.\n- It is commonly used for programming errors and invalid operations.\n- Examples: `NullPointerException`, `ArithmeticException`, `IllegalArgumentException`.\n\n## 2. Exception\n- A custom class extending `Exception` directly creates a checked exception.\n- The compiler forces us to handle it using `try-catch` or declare it using `throws`.\n- It is commonly used for recoverable situations that the caller is expected to handle.\n- Example: `IOException`.\n\n## 3. Why extend RuntimeException in StackException?\n\nIn an array-based stack, two exceptional conditions can occur:\n\n- **Stack Overflow:** Trying to push an element when the stack is full.\n- **Stack Underflow:** Trying to pop or peek when the stack is empty.\n\nThese conditions represent invalid stack operations. Therefore, extending `RuntimeException` is a reasonable design choice.\n\nExample:\n\n```java\npublic class StackException extends RuntimeException {\n    public StackException(String message) {\n        super(message);\n    }\n}\n```\n\nWe can throw this exception without declaring it using `throws`:\n\n```java\npublic void push(int e) {\n    if (TOS == size - 1) {\n        throw new StackException(\"Stack Overflow\");\n    }\n    arr[++TOS] = e;\n}\n```\n\n## 4. What if we extend Exception instead?\n\n```java\npublic class StackException extends Exception {\n    public StackException(String message) {\n        super(message);\n    }\n}\n```\n\nNow `StackException` becomes a checked exception. The `push()` method must declare it:\n\n```java\npublic void push(int e) throws StackException {\n    if (TOS == size - 1) {\n        throw new StackException(\"Stack Overflow\");\n    }\n    arr[++TOS] = e;\n}\n```\n\nThe calling method must handle it using `try-catch` or declare it using `throws`.\n\n## 5. Difference between Exception and RuntimeException\n\n| Feature | Exception (direct subclass) | RuntimeException (subclass) |\n|---|---|---|\n| Type | Checked | Unchecked |\n| Handling required by compiler | Yes | No |\n| `try-catch` or `throws` required | Yes | No |\n| Typical use | Recoverable failures | Invalid operations or programming errors |\n\n**Important:** `RuntimeException` itself extends `Exception`, but Java treats its subclasses as unchecked exceptions.\n\n### Conclusion\nWe extend `RuntimeException` in `StackException` because stack overflow and underflow can be treated as invalid operations, and the compiler does not need to force every caller to handle them. However, extending `Exception` is also possible if we want to enforce explicit handling.\n",
+      "autoResize": false,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
