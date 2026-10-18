@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "C_Dq-EeYnHpNaR-SMH4Aw",
+      "type": "text",
+      "x": 435,
+      "y": 122,
+      "width": 663,
+      "height": 775,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": null,
+      "seed": 1896233559,
+      "version": 38,
+      "versionNonce": 1338692217,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1792249039724,
+      "link": null,
+      "locked": false,
+      "text": "Algorith to convert Infix to prefix \n     (NON-PARANTHESIZED)\n================================\n\n1. Scan infix from right to left .\n\n2. Check whether the element is an operator or operand .\n\n3. If it is an operand then copy it in prefix string and go to step\n5.\n\n4. If it is an operator then :\n\n  a. Check whether the stack is empty or not .\n  \n  b. If it is empty then push it in the stack and goto step 5.\n\n  c. If not empty then :\n         \n       1. Compare the prec of out operator with stacktop .\n       \n       2. If the precedence of outside operator is higher or equal\nthen push it and go to step 5 .\n \n       3. If the prec of stacktop is higher then pop it , copy it in\nthe prefix string and goto step 4a .\n\n5. Repeat above process untill infix expression ends .\n\n6. Finally reverse the prefix string to get the correct version of\nthe expression .",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Algorith to convert Infix to prefix \n     (NON-PARANTHESIZED)\n================================\n\n1. Scan infix from right to left .\n\n2. Check whether the element is an operator or operand .\n\n3. If it is an operand then copy it in prefix string and go to step 5.\n\n4. If it is an operator then :\n\n  a. Check whether the stack is empty or not .\n  \n  b. If it is empty then push it in the stack and goto step 5.\n\n  c. If not empty then :\n         \n       1. Compare the prec of out operator with stacktop .\n       \n       2. If the precedence of outside operator is higher or equal then push it and go to step 5 .\n \n       3. If the prec of stacktop is higher then pop it , copy it in the prefix string and goto step 4a .\n\n5. Repeat above process untill infix expression ends .\n\n6. Finally reverse the prefix string to get the correct version of the expression .",
+      "autoResize": false,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
