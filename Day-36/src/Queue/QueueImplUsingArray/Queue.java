@@ -13,7 +13,7 @@ public class Queue {
         arr = new int[size];
     }
 
-    public void queue(int x){
+    public void enqueue(int x){
         if (rear==size-1) {
             QueueException ex = new QueueException("Queue Overflow");
             throw ex;

@@ -26,7 +26,7 @@ public class UseQueue {
                         try {
                             System.out.println("Enter element to queue");
                             int x = kb.nextInt();
-                            queue.queue(x);
+                            queue.enqueue(x);
                             System.out.println("Element queued successfully");
                         } catch (QueueException ex){
                             System.out.println(ex.getMessage());
