@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "PCQsLniLEyU5rdZ_oRUtt",
+      "type": "text",
+      "x": 207,
+      "y": 125,
+      "width": 558,
+      "height": 1925,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": null,
+      "seed": 1442465063,
+      "version": 1397,
+      "versionNonce": 1118935699,
+      "isDeleted": false,
+      "boundElements": [],
+      "updated": 1792393056537,
+      "link": null,
+      "locked": false,
+      "text": "Queue\n======\n\n1. It is also an linear data structure .\n\n2. Like an array it is also open from both the ends .\n\n3. But its both ends are not for both the operartion .\n\n4. It's REAR end (BACK end) is used for insertion , and\nits FRONT end is used for deletion .\n\n5. In Queue insertion is called enque and deletion is\ncalled dequeue .\n\n6. It follows FIFO that is first in first out .\n\nVarieties of Queue\n-----------------------\n\n1. Linear Queue\n\n2. Circular Queue\n\n3. Dynamic Queue\n\n4. Priority Queue\n\n5. Dequeue (Doubly ended queue)\n\n\n\nAlgorithm for enqueue\n---------------------------\n\n1. Check whether the queue is full or not .\n\n2. If queue is full print message \"Queue overflow\" and\nreturn .\n\n3. If Queue is not full increament the rear by 1 and\nenque element at index rear .\n\n4. finish and return .\n\n\nAlgorithm for dequeue\n---------------------------\n\n1. Check whether the queue is empty or not .\n\n2. If queue is empty print message \"Queue underflow\"\nand return.\n\n3. If Queue is not empty dequeue the element at front\nand increament the front by 1 .\n\n4. finish and return the enqueued element .\n\n\nAlgorithm for peek\n---------------------------\n\n1. Check whether the queue is empty or not .\n\n2. If queue is empty print message \"Queue underflow\"\nand return .\n\n3. If Queue is not empty .\n\n4. copy and return the element element at index front .\n\n\n\n\n\n",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Queue\n======\n\n1. It is also an linear data structure .\n\n2. Like an array it is also open from both the ends .\n\n3. But its both ends are not for both the operartion .\n\n4. It's REAR end (BACK end) is used for insertion , and its FRONT end is used for deletion .\n\n5. In Queue insertion is called enque and deletion is called dequeue .\n\n6. It follows FIFO that is first in first out .\n\nVarieties of Queue\n-----------------------\n\n1. Linear Queue\n\n2. Circular Queue\n\n3. Dynamic Queue\n\n4. Priority Queue\n\n5. Dequeue (Doubly ended queue)\n\n\n\nAlgorithm for enqueue\n---------------------------\n\n1. Check whether the queue is full or not .\n\n2. If queue is full print message \"Queue overflow\" and return .\n\n3. If Queue is not full increament the rear by 1 and enque element at index rear .\n\n4. finish and return .\n\n\nAlgorithm for dequeue\n---------------------------\n\n1. Check whether the queue is empty or not .\n\n2. If queue is empty print message \"Queue underflow\" and return.\n\n3. If Queue is not empty dequeue the element at front and increament the front by 1 .\n\n4. finish and return the enqueued element .\n\n\nAlgorithm for peek\n---------------------------\n\n1. Check whether the queue is empty or not .\n\n2. If queue is empty print message \"Queue underflow\" and return .\n\n3. If Queue is not empty .\n\n4. copy and return the element element at index front .\n\n\n\n\n\n",
+      "autoResize": false,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}

@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "Ss3pv-ktG39IBmlNpcOBl",
+      "type": "text",
+      "x": 118,
+      "y": 110,
+      "width": 475,
+      "height": 425,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": null,
+      "seed": 1359415844,
+      "version": 484,
+      "versionNonce": 1036541084,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1792331030677,
+      "link": null,
+      "locked": false,
+      "text": "Top Google Interview Question \n============================\n\n1.\n\nYou have been given a stack called s1 . Design a\nmethod called sort() which accepts the stack\nand sort it .\n\nYou are allowed to use only Stack specific\nmethods that are push, pop, peek and empty .If\nneeded you can use an auxilary Stack .\n\n\n2. \n\nYou are given a string . Reverse using Stack . ",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Top Google Interview Question \n============================\n\n1.\n\nYou have been given a stack called s1 . Design a method called sort() which accepts the stack and sort it .\n\nYou are allowed to use only Stack specific methods that are push, pop, peek and empty .If needed you can use an auxilary Stack .\n\n\n2. \n\nYou are given a string . Reverse using Stack . ",
+      "autoResize": false,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
