@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "j2WIoxRV4ITKcHYyDb9o9",
+      "type": "text",
+      "x": 295,
+      "y": 125,
+      "width": 962,
+      "height": 275,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": null,
+      "seed": 545736665,
+      "version": 390,
+      "versionNonce": 386879865,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1792574554701,
+      "link": null,
+      "locked": false,
+      "text": "Doubly LinkedList\n================\n\n1. In a circular LL we can access previous node but for this we need to take complete round trip .\n\n2. To remove this problem DSA suggest us that we can use doubly Linked List .\n\n3. In Doubly Linked List each node has 2 pointers :\n\na. prev : for pointing to the prev node .\nb. next : for pointing to the next node .",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Doubly LinkedList\n================\n\n1. In a circular LL we can access previous node but for this we need to take complete round trip .\n\n2. To remove this problem DSA suggest us that we can use doubly Linked List .\n\n3. In Doubly Linked List each node has 2 pointers :\n\na. prev : for pointing to the prev node .\nb. next : for pointing to the next node .",
+      "autoResize": true,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
