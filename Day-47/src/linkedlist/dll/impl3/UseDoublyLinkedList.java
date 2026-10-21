@@ -1,4 +1,4 @@
-package linkedlist.dllimpl2;
+package linkedlist.dll.impl3;
 
 public class UseDoublyLinkedList {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package linkedlist.dllimpl2;
+package linkedlist.dll.impl3;
 
 public class Node {
     private int data;

@@ -1,4 +1,4 @@
-package linkedlist.dllimpl2;
+package linkedlist.dll.impl3;
 
 public class DoublyLinkedList {
     private Node head;
@@ -126,14 +126,11 @@ public class DoublyLinkedList {
             return;
         }
 
-        if (temp.getNext()==null){
-            temp.getPrev().setNext(null);
-        }
-        else {
+        temp.getPrev().setNext(temp.getNext());
 
-            temp.getPrev().setNext(temp.getNext());
+        if(temp.getNext()!=null)
             temp.getNext().setPrev(temp.getPrev());
-        }
+
     }
 
 }
