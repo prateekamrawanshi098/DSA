@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "Sb5TOloC0FCzJqTwxCLpK",
+      "type": "text",
+      "x": 266,
+      "y": 111,
+      "width": 579,
+      "height": 1500,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": null,
+      "seed": 448390754,
+      "version": 2395,
+      "versionNonce": 1364150114,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1792744747072,
+      "link": null,
+      "locked": false,
+      "text": "Terminologies related to tree\n------------------------------------\n\n1. Binary Tree -> It is a sprcial type of tree in which each\nnode can have at most 2 children .\n\n\n2. Root node -> Node sitting at the top most level of\ntree is called ROOT NODE .\n -> All Nodes are direct or indirect child of Root Node .\n\n3. Leaf node -> Node which doesn't have any child is called\nleaf node .\n\n4. Non-Leaf node -> Node which as atleast one child node\nis called Non-leaf node .\n\n5. Level of node -> Length of path or distance from root\nnode is called level of that node .\n\n6.  Ancestors -> Node which appear before particular node\nbut in the same path .\n\n7. Descendants -> Node which appear after particular\nnode but in the same path .\n\n8. Height -> Height of tree is defined as level of taht leaf\nnode +1 . \n\n9. Siblings -> Nodes which have same parents are called\nsiblings to each other .\n\n10. Nodes of same generation -> Nodes which are at the\nsame level .\n\n11. Full Binary Tree -> Binary Tree in which every node has\neither 0 or 2 children is called as full binary tree .\n\n12 . Complete Binary Tree -> A binary tree in which all the\nlevels except the last level are completely full and at the\nLAST LEVEL the nodes appear from LEFT TO RIGHT is\ncalled as a complete TREE .\n\n13. PERFECT BINARY TREE -> a type of binary tree in\nwhich every internal node has exactly two children and all\nleaf nodes are at the exact same level or depth.\n\n14. Binary search Tree -> is a special type of binary tree\nin which root node has a special relationship with its\nchildren .\n\n-> All the nodes special to root nodes appear towards its\nleft and those which are greater than root node appear\ntowards its right .\n\n-> Benfit is that searching an element  with lesser number\nof comparisons as compared to an array or binary tree .\nPrecisely a BST requires max comparisions equal to its\nheight which is never newer more than log2n where n is\nnumber of n nodes .",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "Terminologies related to tree\n------------------------------------\n\n1. Binary Tree -> It is a sprcial type of tree in which each node can have at most 2 children .\n\n\n2. Root node -> Node sitting at the top most level of tree is called ROOT NODE .\n -> All Nodes are direct or indirect child of Root Node .\n\n3. Leaf node -> Node which doesn't have any child is called leaf node .\n\n4. Non-Leaf node -> Node which as atleast one child node is called Non-leaf node .\n\n5. Level of node -> Length of path or distance from root node is called level of that node .\n\n6.  Ancestors -> Node which appear before particular node but in the same path .\n\n7. Descendants -> Node which appear after particular node but in the same path .\n\n8. Height -> Height of tree is defined as level of taht leaf node +1 . \n\n9. Siblings -> Nodes which have same parents are called siblings to each other .\n\n10. Nodes of same generation -> Nodes which are at the same level .\n\n11. Full Binary Tree -> Binary Tree in which every node has either 0 or 2 children is called as full binary tree .\n\n12 . Complete Binary Tree -> A binary tree in which all the levels except the last level are completely full and at the LAST LEVEL the nodes appear from LEFT TO RIGHT is called as a complete TREE .\n\n13. PERFECT BINARY TREE -> a type of binary tree in which every internal node has exactly two children and all leaf nodes are at the exact same level or depth.\n\n14. Binary search Tree -> is a special type of binary tree in which root node has a special relationship with its children .\n\n-> All the nodes special to root nodes appear towards its left and those which are greater than root node appear towards its right .\n\n-> Benfit is that searching an element  with lesser number of comparisons as compared to an array or binary tree . Precisely a BST requires max comparisions equal to its height which is never newer more than log2n where n is number of n nodes .",
+      "autoResize": false,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
