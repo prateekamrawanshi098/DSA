@@ -1,4 +1,4 @@
-package impl2;
+package tree.bst.impl2;
 
 public class UseBST {
 
