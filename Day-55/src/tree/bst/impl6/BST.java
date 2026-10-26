@@ -1,0 +1,222 @@
+package tree.bst.impl6;
+
+import java.util.Stack;
+
+public class BST {
+    private Node root;
+
+    public void append(int data) {
+        Node newNode = new Node(data);
+        if (root == null) {
+            root = newNode;
+            return;
+        }
+
+        Node temp = root;
+        Node prev = null;
+        while (temp != null) {
+            prev = temp;
+            if (data < temp.getData()) {
+                temp = temp.getLeft();
+            } else {
+                temp = temp.getRight();
+            }
+        }
+        if (data < prev.getData()) {
+            prev.setLeft(newNode);
+        } else {
+            prev.setRight(newNode);
+        }
+
+    }
+
+
+    public void append_2(int data) {
+        Node newNode = new Node(data);
+        if (root == null) {
+            root = newNode;
+            return;
+        }
+
+        Node temp = root;
+        while (true) {
+            if (data < temp.getData()) {
+                if (temp.getLeft() == null) {
+                    temp.setLeft(newNode);
+                    return;
+                }
+                temp = temp.getLeft();
+            } else {
+
+                if (temp.getRight() == null) {
+                    temp.setRight(newNode);
+                    return;
+                }
+                temp = temp.getRight();
+            }
+        }
+
+    }
+
+    public void preorderTraversal() {
+        if (root == null) {
+            System.out.println("Tree is empty");
+            return;
+        }
+
+        Node temp = root;
+        Stack<Node> stack = new Stack<>();
+
+
+        while (true) {
+            System.out.println(temp.getData());
+
+            if (temp.getRight()!=null){
+                stack.push(temp.getRight());
+            }
+
+            temp=temp.getLeft();
+            if (temp==null){
+                if (stack.isEmpty()){
+                    break;
+                }
+                temp=stack.pop();
+            }
+        }
+    }
+
+    public void inorderTraversal(){
+        if (root==null){
+            System.out.println("Tree is empty");
+            return;
+        }
+
+        Stack <Node> stack= new Stack<>();
+        Node temp=root;
+
+        while (temp!=null || !stack.isEmpty()){
+
+            while (temp!=null){
+                stack.push(temp);
+                temp=temp.getLeft();
+            }
+
+                temp=stack.pop();
+                System.out.println(temp.getData());
+                temp=temp.getRight();
+        }
+    }
+
+    public void postOrder(){
+        if (root==null){
+            System.out.println("Tree is empty");
+            return;
+        }
+
+        Stack <Node> stack= new Stack<>();
+        Node temp=root;
+
+        while (temp!=null || !stack.isEmpty()){
+            while (temp!=null){
+                stack.push(temp);
+                if (temp.getRight()!=null){
+                    temp.getRight().setFlag(-1);
+                    stack.push(temp.getRight());
+                }
+                temp=temp.getLeft();
+            }
+
+            temp=stack.pop();
+            if (temp.getFlag()==0){
+                System.out.println(temp.getData());
+                temp=null;
+            }
+            else temp.setFlag(0);
+        }
+    }
+
+    public Node [] searchNode(int x){
+        Node temp=root;
+        Node par=null;
+
+        while (temp!=null){
+            if (temp.getData()==x){
+                return new Node [] {par,temp};
+            }
+            par=temp;
+            if (temp.getData()>x){
+                temp=temp.getLeft();
+            }
+            else
+                temp=temp.getRight();
+        }
+        return null;
+    }
+
+    public boolean deleteNode(int x){
+        if (root==null){
+            System.out.println("Tree is empty");
+            return false;
+        }
+
+        Node [] arr=searchNode(x);
+
+        if (arr==null){
+            System.out.println("Node not found");
+            return false;
+        }
+
+        Node par,child,succ;
+        par=arr[0];
+        child=arr[1];
+        if (child.getLeft()!=null && child.getRight()!=null){
+            succ=child.getRight();
+            par=child;
+            while (succ.getLeft()!=null){
+                par=succ;
+                succ=succ.getLeft();
+            }
+            child.setData(succ.getData());
+            child=succ;
+        }
+
+        if (child.getLeft()==null && child.getRight()==null){
+            if (par==null){
+                root=null;
+            }
+            else if (par.getLeft()==child){
+                par.setLeft(null);
+            }
+            else {
+                par.setRight(null);
+            }
+        } else if (child.getLeft()!=null && child.getRight()==null) {
+
+            if (par==null){
+                root=child.getLeft();
+            }
+
+            else if (par.getLeft()==child){
+                par.setLeft(child.getLeft());
+            }
+            else {
+                par.setRight(child.getLeft());
+            }
+        }
+
+        else {
+
+            if (par==null){
+                root=child.getRight();
+            }
+            else if (par.getLeft()==child){
+                par.setLeft(child.getRight());
+            }
+            else {
+                par.setRight(child.getRight());
+            }
+
+        }
+        return true;
+    }
+}
