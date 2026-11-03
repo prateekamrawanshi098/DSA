@@ -1,0 +1,51 @@
+{
+  "type": "excalidraw",
+  "version": 2,
+  "source": "https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor",
+  "elements": [
+    {
+      "id": "e_m-X6Q6vJudNLKhHpmuH",
+      "type": "text",
+      "x": 114,
+      "y": 145,
+      "width": 520,
+      "height": 1775,
+      "angle": 0,
+      "strokeColor": "#1e1e1e",
+      "backgroundColor": "transparent",
+      "fillStyle": "solid",
+      "strokeWidth": 2,
+      "strokeStyle": "solid",
+      "roughness": 1,
+      "opacity": 100,
+      "groupIds": [],
+      "frameId": null,
+      "index": "a0",
+      "roundness": null,
+      "seed": 647165002,
+      "version": 2044,
+      "versionNonce": 507566742,
+      "isDeleted": false,
+      "boundElements": null,
+      "updated": 1793690079201,
+      "link": null,
+      "locked": false,
+      "text": "PRIORITYQUEUE\n=================\n\n1. A PriorityQueue is used when the objects are\nsupposed to be processesd based on the priority.\n\n2. PriorityQueue is based on priority heap .\n\n3. The elements of the priority queue are ordered\naccording to the natural ordering, or by a\nComparator provided at queue construction time,\ndepending on which constructor is used .\n\n\nJava's PrioriyQueue Class \n========================\n\nIn Java PriorityQueue is a class belonging to the\ncollections framework .\n\nIt was added to java from JDK 5.\n\nPriorityQueue implements Queue interface .\n\nPriorityQueue doen't permit null .\nBecause PriorityQueue is based on heap and thus\ncannot compare Object with null and will give null\npointer exception .\n\nWe can't create a PriorityQueue of the objects that\nare non-comparable .\n\nPriorityQueue are unbounded queues .\n\n\n\nMethods of PriorityQueue\n========================\n\n1. add ( Object ) / offer ( Object )\n\na. Both methods are used for adding or inserting\nelement in PQ .\n\nb. Insertion is not ordered .\n\nc. The elements are stored in a MIN HEAP with the\nLEAST VALUE element at the root .\n\nd. Return true on successful insertion of elements .\n\n\n2. remove ( ) / poll ( )\n\na. Both the methods are used for deleting the\nHEAD element of the queue and return it .\n\nb. Both the methods HEAPIFY the PQ after\ndeleteion .\n\nc. If queue is empty remove throws NSEE while poll\nreturns null .\n\n\n3. element() / peek ()\n\na. Both methods are used to access HEAD element\nform queue .\n\nb Returns the head element without deleting it .\n",
+      "fontSize": 20,
+      "fontFamily": 5,
+      "textAlign": "left",
+      "verticalAlign": "top",
+      "containerId": null,
+      "originalText": "PRIORITYQUEUE\n=================\n\n1. A PriorityQueue is used when the objects are supposed to be processesd based on the priority.\n\n2. PriorityQueue is based on priority heap .\n\n3. The elements of the priority queue are ordered according to the natural ordering, or by a Comparator provided at queue construction time, depending on which constructor is used .\n\n\nJava's PrioriyQueue Class \n========================\n\nIn Java PriorityQueue is a class belonging to the collections framework .\n\nIt was added to java from JDK 5.\n\nPriorityQueue implements Queue interface .\n\nPriorityQueue doen't permit null .\nBecause PriorityQueue is based on heap and thus cannot compare Object with null and will give null pointer exception .\n\nWe can't create a PriorityQueue of the objects that are non-comparable .\n\nPriorityQueue are unbounded queues .\n\n\n\nMethods of PriorityQueue\n========================\n\n1. add ( Object ) / offer ( Object )\n\na. Both methods are used for adding or inserting element in PQ .\n\nb. Insertion is not ordered .\n\nc. The elements are stored in a MIN HEAP with the LEAST VALUE element at the root .\n\nd. Return true on successful insertion of elements .\n\n\n2. remove ( ) / poll ( )\n\na. Both the methods are used for deleting the HEAD element of the queue and return it .\n\nb. Both the methods HEAPIFY the PQ after deleteion .\n\nc. If queue is empty remove throws NSEE while poll returns null .\n\n\n3. element() / peek ()\n\na. Both methods are used to access HEAD element form queue .\n\nb Returns the head element without deleting it .\n",
+      "autoResize": false,
+      "lineHeight": 1.25
+    }
+  ],
+  "appState": {
+    "gridSize": 20,
+    "gridStep": 5,
+    "gridModeEnabled": false,
+    "viewBackgroundColor": "#ffffff"
+  },
+  "files": {}
+}
